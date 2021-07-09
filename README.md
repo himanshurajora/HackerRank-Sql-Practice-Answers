@@ -1,6 +1,14 @@
 # HackerRank-Sql-Practice-Answers
 ## Just seach the name of the question in via ctr+f and get your solution right in front of you.
 
+
+Weather Observation Station 1
+
+From <https://www.hackerrank.com/challenges/weather-observation-station-1/problem> 
+
+SELECT CITY, STATE FROM STATION;![image](https://user-images.githubusercontent.com/50817974/125047355-82ed5f00-e0bc-11eb-8959-e70e1e4daa32.png)
+
+
 Weather Observation Station 3
 
 From <https://www.hackerrank.com/challenges/weather-observation-station-3/problem> 
