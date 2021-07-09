@@ -280,6 +280,27 @@ From <https://www.hackerrank.com/challenges/population-density-difference/proble
 
 SELECT MAX(POPULATION)-MIN(POPULATION) FROM CITY;
 
+Type of Triangle
+
+From <https://www.hackerrank.com/challenges/what-type-of-triangle/problem> 
+
+SELECT CASE WHEN A + B <= C OR A + C <= B OR B + C <= A THEN 'Not A Triangle'
+            WHEN A = B AND B = C THEN 'Equilateral'
+            WHEN A = B OR A = C OR B = C THEN 'Isosceles'
+            ELSE 'Scalene'
+        END
+FROM TRIANGLES
+
+The PADS
+
+From <https://www.hackerrank.com/challenges/the-pads/problem> 
+
+SELECT Name || '(' || SUBSTR(Occupation, 1, 1) || ')'
+FROM OCCUPATIONS
+ORDER BY Name;
+SELECT 'There are a total of ' || Count(Name) || ' ' || LOWER(Occupation) || 's.'
+FROM Occupations
+GROUP BY Occupation
+ORDER BY Count(Name), Occupation;
 
 
-![image](https://user-images.githubusercontent.com/50817974/125046823-00fd3600-e0bc-11eb-83d0-3ed072cc75f1.png)
