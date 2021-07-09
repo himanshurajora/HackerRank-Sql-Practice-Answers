@@ -145,7 +145,6 @@ SELECT MAX(POPULATION)-MIN(POPULATION) FROM CITY;
 
 
 
-![image](https://user-images.githubusercontent.com/50817974/125046825-00fd3600-e0bc-11eb-8421-18adbc6abc34.png)
 Weather Observation Station 3
 
 From <https://www.hackerrank.com/challenges/weather-observation-station-3/problem> 
