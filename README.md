@@ -302,4 +302,55 @@ FROM Occupations
 GROUP BY Occupation
 ORDER BY Count(Name), Occupation;
 
+The Blunder
+
+From <https://www.hackerrank.com/challenges/the-blunder/problem> 
+
+SELECT CEIL(AVG(Salary) - AVG(REPLACE(Salary, '0', '')))
+FROM EMPLOYEES;
+
+From <https://www.hackerrank.com/challenges/the-blunder/forum> 
+
+Top Earners
+
+From <https://www.hackerrank.com/challenges/earnings-of-employees/problem> 
+
+SELECT * FROM (SELECT MAX(MONTHS*SALARY), COUNT(EMPLOYEE_ID) FROM EMPLOYEE GROUP BY MONTHS*SALARY  ORDER BY MONTHS*SALARY DESC) WHERE ROWNUM=1;
+
+Weather Observation Station 2
+
+From <https://www.hackerrank.com/challenges/weather-observation-station-2/problem> 
+
+SELECT ROUND(SUM(LAT_N), 2), ROUND(SUM(LONG_W), 2) FROM STATION;
+
+Weather Observation Station 13
+
+From <https://www.hackerrank.com/challenges/weather-observation-station-13/problem> 
+
+SELECT SUM(LAT_N) FROM STATION WHERE LAT_N BETWEEN 38.7880 AND 137.2345;
+
+Weather Observation Station 14
+
+From <https://www.hackerrank.com/challenges/weather-observation-station-14/problem> 
+
+SELECT ROUND(MAX(LAT_N), 4) FROM STATION WHERE LAT_N < 137.2345;
+
+Weather Observation Station 15
+
+From <https://www.hackerrank.com/challenges/weather-observation-station-15/problem> 
+
+select * from 
+  (select round(LONG_W,4) from STATION
+    where LAT_N<137.2345
+    order by LAT_N desc) 
+ where rownum=1;
+
+Weather Observation Station 16
+
+From <https://www.hackerrank.com/challenges/weather-observation-station-16/problem> 
+
+SELECT ROUND(MIN(LAT_N), 4) FROM STATION WHERE LAT_N > 38.7780; 
+
+![image](https://user-images.githubusercontent.com/50817974/125191879-4491a480-e262-11eb-813a-8a3afb67129d.png)
+
 
